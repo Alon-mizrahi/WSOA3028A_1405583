@@ -1,6 +1,10 @@
+
 let a=document.getElementById("mybutton");
-addEventListener('click', func);
-function func()
-{
-    alert("PP");
-}
+
+
+//a.addEventListener('click',func);
+//a.addEventListener('click', func);
+//a.addEventListener('click',func()
+//{
+//    alert("big PP");
+//}
