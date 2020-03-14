@@ -29,6 +29,12 @@
             <li>
                 <h2><a href="AllBlogs.html">Blogs</a></h2>
             </li>
+            <li>
+                <h2><a href="wireframe.html">Wireframe</a></h2>
+            </li>
+            <li>
+                <h2><a href="#Index6">Contacts and social media</a></h2>
+            </li>
         </ul>
     </nav>
 </header>
@@ -38,6 +44,7 @@
     <button id="mybutton">
         mybutton
     </button>
+    <img src="https://media.giphy.com/media/QKkWXNZ1RJnZal1zm9/giphy.gif">
 
     <!--top of page index list here-->
     <nav>
@@ -120,6 +127,7 @@
             are here and they are up to something, something big and it’s coming sooner than we think...
             <br>
             <img src="https://media.tenor.com/images/6d48c5c806b5f40a13ab882caec8fd35/tenor.gif">
+            <img src="https://media.giphy.com/media/NVTdJ7exwOOwE/giphy.gif">
             <address>
                 <br>
                 Posted on
@@ -129,18 +137,24 @@
         </article>
 
         <article>
-            <h2 id="Index3"> Do you Know your Lizard people?</h2>
+            <h2 id="Index3"> Do you Know your Lizard people? Play now!</h2>
             <!--Lizard people game here-->
 
-            <img id="LizardGameStack" src="https://citizen.co.za/wp-content/uploads/2019/05/helen-518x418.jpg">
+            <p id="scoretxt">Score:</p>
 
-            <button>
-                Lizzard
+            <img id="LizardGameStack" src="https://media.giphy.com/media/coBIzlrDq93doYaA9U/giphy.gif">
+
+            <button id="lzrdbtn" onclick="LizardBtn(imgArray, imagestack)">
+                Lizard
             </button>
+            <p id="ortxt">OR</p>
 
-            <button onclick="Nextimage()">
+            <button id="hmnbtn" onclick="HumanBtn(imgArray, imagestack)">
                 Human
             </button>
+
+            <button id="cntnbtn" onclick="continueBtn(imgArray, imagestack)">Continue</button>
+
 
 
         </article>
@@ -219,9 +233,16 @@
     </main>
 </body>
 
-<footer>
-    <!--this is a joke-->
-    <h3><a href="https://youtu.be/oHg5SJYRHA0"> Click here for a good time</a> </h3>
+<footer onload="startfunc(loaded)">
+    <h2 id="Index6">Contact:</h2>
+    email: georgejridley@inthedark.com
+    <br>
+    cell: 0799896776
+    <br>
+    Address: undisclosed
+    <!--add socials here-->
+
+
     <script src="index.js"></script>
 </footer>
 
