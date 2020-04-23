@@ -1,22 +1,27 @@
+//pop up window joke-------------------------------------
+//need geo location and send alert
+/*window.onload = function geofind() {
+    alert("the government is trying to track you!!");
 
-//let loaded = false;
-//function startfunc(loaded) { loaded = true; console.log("loaded"); }
-//if (loaded === true) {
+    function success(position) {
+        alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude + " We know where you are");
+    }
+    function error() {
+        if (error.code == error.PERMISSION_DENIED) {
+            alert("phew... were safe for now");
+        }
+    }
 
+    navigator.geolocation.getCurrentPosition(success, error);
+}*/
 
-
-let a = document.getElementById("mybutton");
-a.addEventListener('click', func);
-function func() {
-    alert("big PP");
-}
-
+//back button function------------------------------------------
 function BackFunc() {
     window.history.back();
 }
 
 
-//Lizard people game-----------------------------------------
+//Lizard people game--------------------------------------------------------------------
 
 let imagestack = document.getElementById("LizardGameStack");
 let n = 1;
@@ -166,4 +171,4 @@ function EndOfGame(scoretxt, score) {
     imagestack.src = "https://media.giphy.com/media/coBIzlrDq93doYaA9U/giphy.gif";
 }
 //}
-//-----------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
