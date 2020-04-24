@@ -32,7 +32,7 @@ let lzrdbtn = document.getElementById("lzrdbtn");
 let cntnbtn = document.getElementById("cntnbtn");
 let ortxt = document.getElementById("ortxt");
 let scoretxt = document.getElementById("scoretxt");
-scoretxt.style.display = 'none';   //might use this instead of disabled
+scoretxt.style.display = "none";   //might use this instead of disabled
 
 
 lzrdbtn.disabled = true;
@@ -172,3 +172,7 @@ function EndOfGame(scoretxt, score) {
 }
 //}
 //--------------------------------------------------------------------------------------------------
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
