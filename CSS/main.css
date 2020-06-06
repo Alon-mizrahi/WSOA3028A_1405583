@@ -1,12 +1,12 @@
 header{
-    background-image: url('../artwork/skyline1.png');
+    background-image: url('../artwork/skyline1edit.jpg');
     text-align: center;
     color: blue;
     font-size: 40px;
-    
 }
 
 h1{
+    font-weight: bold;
     text-align: center;
     color: crimson;
     font-size: 30px;
@@ -18,17 +18,108 @@ h2{
     font-size: 25px
 }
 
-h3{    text-align: center;
+h3{ 
+    text-align: center;
     color: rgb(88, 35, 185);
     font-size: 20px}
 
 article{
-text-align: left;
-font-size: 20px ;
-color: rgb(20, 19, 19);
-background-color: darkslategrey;
+    text-align: justify;
+    font-size: 20px ;
+    color: rgb(20, 19, 19);
+    background-color: darkslategrey;
+
+    margin:auto;
+    padding-top: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 25%;
+
+    height: 100%;
+    width: 70%;
+
+
+    letter-spacing: 2px;
+    line-height: 1.2;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.button{border-style: inset;
-background-color: lightgray;
+.button{
+    border-style: outset;
+    background-color: lightgray;
+    border-color: darkgray;
+    position: relative;
+    
+}
+.indexnav:link, .indexnav:visited{
+    background-color: lightgray;
+    color: blue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block
+
+    /*margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-left: 100px;*/
+}
+.indexnav:active, .indexnav:hover
+{
+    background-color: darkgray;
+}
+
+.Blog{
+    border-style: outset;
+    background-color: lightgray;
+    border-color: darkgray;
+
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+
+}
+
+
+ul
+{
+list-style: none;
+}
+
+.game{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    max-height: 500px;
+
+}
+
+.backtotop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    border-width: 3px;
+    border-style: inset ;
+    border-color: darkgray;
+    color: gray;
+}
+
+.blogpic{
+    float: right;
+}
+
+.indexarticlebacking{
+
+}
+.indexarticlebackimage{
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }

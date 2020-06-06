@@ -27,39 +27,26 @@
             in the Dark</h1>
         <ul>
             <li>
-                <a href="Blogs/2020/02/18/aboutme.html"> <button class="button">
-                        <h2>About</h2>
-                    </button></a>
+                <h2><a class="button indexnav" href="Blogs/2020/02/18/aboutme.html">About</a></h2>
             </li>
             <li>
-                <a href="AllBlogs.html"><button class="button">
-                        <h2>Blogs</h2>
-                    </button></a>
+                <h2><a class="button indexnav" href="AllBlogs.html">Blogs</a></h2>
             </li>
             <li>
-                <a href="NewsBoard.html"><button class="button">
-                        <h2>News board</h2>
-                    </button></a>
+                <h2><a style="left: 200px;" class="button indexnav" href="NewsBoard.html"> News board</a></h2>
             </li>
             <li>
-                <a href="wireframe.html"><button class="button">
-                        <h2>Wireframe</h2>
-                    </button></a>
+                <h2><a style="left: -200px; bottom: 80px;" class="button indexnav" href="wireframe.html"> Wireframe</a>
+                </h2>
             </li>
             <li>
-                <a href="StyleGuide.html"><button class="button">
-                        <h2>Website Style Guide</h2>
-                    </button></a>
+                <h2> <a class="button indexnav" href="StyleGuide.html"> Website Style Guide</a></h2>
             </li>
             <li>
-                <a href="CharacterRationale.html"><button class="button">
-                        <h2>Character Rational</h2>
-                    </button></a>
+                <h2><a class="button indexnav" href="CharacterRationale.html">Character Rational</a></h2>
             </li>
             <li>
-                <a href="#Index6"><button class="button">
-                        <h2>Contacts and social media</h2>
-                    </button></a>
+                <h2><a class="button indexnav" href="#Index6"> Contacts and social media</a></h2>
             </li>
 
         </ul>
@@ -93,15 +80,11 @@
 
     <!--conspiracy theory's here-->
     <main>
-        <div style="background-image: url('artwork/backgroundimages/Eskomedit.jpg');
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;">
-            <br>
+        <div style="background-image: url('artwork/backgroundimages/Eskomedit.jpg');">
             <article style="border-style: inset;
-            border-width: 8px;">
+                            border-width: 8px;
+                            margin:auto;
+                            padding: 20px">
                 <h2 id="Index1"> Johannesburg in the Dark</h2>
 
                 I’m sitting here in the dark, my laptop out and a candle lit, knowing that in this darkness lies
@@ -191,20 +174,24 @@
             <h2 id="Index3"> Do you Know your Lizard people? Play now!</h2>
             <!--Lizard people game here-->
 
-            <p id="scoretxt">Score:</p>
+            <p style="text-align: center;" id="scoretxt">Score:</p>
 
-            <img id="LizardGameStack" src="https://media.giphy.com/media/coBIzlrDq93doYaA9U/giphy.gif">
+            <img class="game" id="LizardGameStack" src="https://media.giphy.com/media/coBIzlrDq93doYaA9U/giphy.gif">
 
-            <button id="lzrdbtn" onclick="LizardBtn(imgArray, imagestack)">
+            <button class="button" style="float: left;margin-left: 400px; padding: 2%;" id="lzrdbtn"
+                onclick="LizardBtn(imgArray, imagestack)">
                 Lizard
             </button>
-            <p id="ortxt">OR</p>
 
-            <button id="hmnbtn" onclick="HumanBtn(imgArray, imagestack)">
+
+            <button class="button" style="float: right; margin-right: 400px; padding: 2%;" id="hmnbtn"
+                onclick="HumanBtn(imgArray, imagestack)">
                 Human
             </button>
+            <p style="text-align: center; margin-top: 0px;" id="ortxt">OR</p>
 
-            <button id="cntnbtn" onclick="continueBtn(imgArray, imagestack)">Continue</button>
+            <button class="button" style="text-align: center;" id="cntnbtn"
+                onclick="continueBtn(imgArray, imagestack)">Continue</button>
 
         </article>
 
@@ -282,7 +269,7 @@
     </main>
 
     <br>
-    <button onclick="topFunction()" id="TopBtn">Back to top</button>
+    <button class="backtotop" onclick="topFunction()" id="TopBtn">Back to top</button>
 </body>
 
 <footer onload="startfunc(loaded)">
