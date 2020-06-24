@@ -12,7 +12,7 @@ for main headings try gif text headings
 
 
 .header{
-    background-image: url('/artwork/JhbSpace.jpg');
+    background-image: url('../artwork/JhbSpace.jpg');
     object-fit: cover;
     display: block;
     background-position: top left;
