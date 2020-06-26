@@ -7,12 +7,19 @@ for main headings try gif text headings
 
 */
 
+html
+{
+    background-color: black;
+    border: outset darkgray 10px ;
+
+}
+
 
 .header{
     background-image: url('../artwork/JhbSpace.jpg');
     background-size: cover;
     display: block;
-    margin: 0px;
+    margin: auto;
     padding: 10px;
     height: auto;
     max-height: 100vh;
@@ -221,19 +228,33 @@ li
     font-size: 15px;
 }
 
-
-.contacts
-{
-    display: block;
-    color: burlywood;
-}
-
 .rndmtxt
 {
     color: chartreuse;
     font-family: cursive;
     font-weight: bold;
     font-size: 15px;
+}
+
+
+
+footer
+{
+display: block; 
+width: 100%;
+height: 10%; 
+background-image: url(https://i.pinimg.com/originals/6a/2f/77/6a2f7705e95ead4aae8c21af52c80506.jpg);
+background-repeat: repeat;
+}
+
+.contacts
+{
+    text-align: left;
+    justify-content: left;
+
+    display: block;
+    text-decoration: underline;
+    color: sandybrown;
 }
 
 
@@ -282,6 +303,14 @@ li
 
 .blogpic{
     float: right;
+}
+
+/*News Board-----------------------------------------*/
+.newsContent
+{
+    margin: auto;
+    max-height: 10%;
+    max-width: 50%;
 }
 
 

@@ -175,7 +175,7 @@
 
         <div class="ArticleBackground"
             style="background-image: url(https://media.giphy.com/media/eGatIZcqu66ZO/source.gif);">
-            <article class="mainArticle" style="cursor: pointer;">
+            <article class="mainArticle" style="cursor: pointer; overflow: hidden;">
                 <h2 id="Index3"> Do you Know your Lizard people? Play now!</h2>
                 <!--Lizard people game here----------------------------------------------------------------------------------------------->
 
@@ -193,7 +193,7 @@
                     Human
                 </button>
 
-                <p class="rndmtxt" style="text-align: center; margin-top: 0px;" id="ortxt">OR</p>
+                <!--<p class="rndmtxt" style="text-align: center; margin-top: 0px;" id="ortxt">OR</p>-->
 
                 <button style="display: block; margin: auto;position: relative" class="button gamebutton" id="cntnbtn"
                     onclick="continueBtn(imgArray, imagestack)">
@@ -290,18 +290,16 @@
 </body>
 
 <footer onload="startfunc(loaded)">
-    <div
-        style=" display: block; background-size: cover; background-image: url(https://i.pinimg.com/originals/6a/2f/77/6a2f7705e95ead4aae8c21af52c80506.jpg);">
-        <h2 id="Index6">Contact:</h2>
-        <ol class="contacts">
-            <!--add socials here-->
-            <li>email:<a href="mailto:georgejridley@inthedark.com">georgejridley@inthedark.com</a></li>
-            <li>cell: 0799896776</li>
-            <li>Address: undisclosed</li>
-            <li>facebook, twitter coming soon</li>
-        </ol>
-    </div>
+    <h2 id="Index6">Contact:</h2>
+    <ol class="contacts rndmtxt">
+        <!--add socials here-->
+        <li>email:<a href="mailto:georgejridley@inthedark.com">georgejridley@inthedark.com</a></li>
+        <li>cell: 0799896776</li>
+        <li>Address: undisclosed</li>
+        <li>facebook, twitter coming soon</li>
+    </ol>
     <script src="index.js"></script>
+    <script src="TrackerAlertPrank.js"></script>
 </footer>
 
 </html>
