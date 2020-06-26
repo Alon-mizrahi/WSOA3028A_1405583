@@ -244,7 +244,7 @@ li
     display: block;
     min-height: 100vh;
     max-width: 100%;
-    background-image: url(/artwork/backgroundimages/stars.jpg);
+    background-image: url(artwork/backgroundimages/stars.jpg);
     background-repeat: repeat;
 }
 
@@ -274,7 +274,7 @@ li
 
 .blogBackground
 {
-    background-image: url(/artwork/backgroundimages/stars.jpg);
+    background-image: url(artwork/backgroundimages/stars.jpg);
     padding: 40px;
 }
 
