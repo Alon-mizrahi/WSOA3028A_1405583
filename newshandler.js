@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
 
-    var url = 'http://newsapi.org/v2/top-headlines?' +
+    var url = 'https://newsapi.org/v2/top-headlines?' +
         'country=us&' +
         'apiKey=49d1cde63e504a929606432ea8c113c4';
     var req = new Request(url);
