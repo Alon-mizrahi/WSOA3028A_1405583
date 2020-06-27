@@ -23,8 +23,8 @@ $(document).ready(function () {
         complete: function () {
             document.getElementById("wholepage").style.cursor = "default";
         },
-        success: function (data) {
-            console.log(data);
+        success: function (news) {
+            console.log(news);
         },
         error: function () {
             console.log("Whoops, looks like there was a problem fetching news content:(");
