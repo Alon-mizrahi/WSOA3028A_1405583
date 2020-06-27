@@ -12,30 +12,48 @@ $(document).ready(function () {
     console.log(url);
 
 
-    $.ajax({
-        url: url,
-        method: "GET",
-        datatype: "json",
 
-        beforeSend: function () {
-            document.getElementById("wholepage").style.cursor = "wait";
-        },
-        complete: function () {
-            document.getElementById("wholepage").style.cursor = "default";
-        },
-        success: function (news) {
-            console.log(news);
-        },
-        error: function () {
-            console.log("Whoops, looks like there was a problem fetching news content:(");
-        }
+    var url = 'http://newsapi.org/v2/top-headlines?' +
+        'country=us&' +
+        'apiKey=49d1cde63e504a929606432ea8c113c4';
+    var req = new Request(url);
+    fetch(req)
+        .then(function (response) {
+            console.log(response.json());
+        })
 
 
 
 
-    });
 
 
 
+
+
+
+
+    /*
+        $.ajax({
+            url: url,
+            method: "GET",
+            datatype: "json",
+    
+            beforeSend: function () {
+                document.getElementById("wholepage").style.cursor = "wait";
+            },
+            complete: function () {
+                document.getElementById("wholepage").style.cursor = "default";
+            },
+            success: function (news) {
+                console.log(news);
+            },
+            error: function () {
+                console.log("Whoops, looks like there was a problem fetching news content:(");
+            }
+    
+        });
+    
+    
+    */
 
 });
