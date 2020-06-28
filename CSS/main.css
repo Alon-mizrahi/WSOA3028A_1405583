@@ -76,7 +76,7 @@ h1, h2{
 h3{ 
     cursor: text;
     text-align: center;
-    color: rgb(88, 35, 185);
+    color: greenyellow;
     font-size: 40px}
 
 .indexMenu
@@ -209,7 +209,7 @@ li
 
     bottom: 10%;
     color: blue;
-    background-color: darkgreen;
+    background-color: yellowgreen;
     text-decoration: underline;
 }
 
@@ -255,6 +255,11 @@ background-repeat: repeat;
     display: block;
     text-decoration: underline;
     color: sandybrown;
+
+    background-color: grey;
+    background-repeat: no-repeat;
+    border: inset darkgray 5px;
+    width: fit-content;
 }
 
 
@@ -300,11 +305,6 @@ background-repeat: repeat;
 }
 
 
-
-.blogpic{
-    float: right;
-}
-
 /*News Board-----------------------------------------*/
 
 
@@ -324,3 +324,24 @@ margin: auto;
 {
     cursor: pointer;
 }
+
+
+.articleimgs        /*used to stlye all images in blogs wireframe character rational and style guide*/
+{
+    max-width: 40%;
+    max-height: 40%;
+    margin:1%;
+    /*float: right;*/
+}
+
+.otherbckgnd
+{
+    padding-top:1%;
+    padding-bottom: 5%;
+    background-color: darkgray; 
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+    

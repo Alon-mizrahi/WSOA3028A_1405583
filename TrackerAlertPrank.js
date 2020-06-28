@@ -13,7 +13,7 @@ function showPage() {
         }
         function error() {
             if (error.code == error.PERMISSION_DENIED) {
-                alert("phew... were safe for now");
+                alert("phew... we're safe for now");
             }
         }
 
