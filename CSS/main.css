@@ -306,53 +306,21 @@ background-repeat: repeat;
 }
 
 /*News Board-----------------------------------------*/
-.newsContent
+
+
+.newspiece
 {
-    margin: auto;
+border: darkgray inset 10px;
+background-color: lightgray;    
+margin: auto;
     max-height: 10%;
     max-width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: text;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.indexarticlebackimage{
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.newshead
+{
+    cursor: pointer;
 }
-*/
-
-
-
-/*
-article stuff
-
-style=" border-style: inset; border-width: 8px; margin:auto; padding: 20px"
-
-style="border-style: inset;
-        border-width: 8px;
-        margin:auto;
-        padding: 20px"
-
-        style="border-style: inset;
-                            border-width: 8px;
-                            margin:auto;
-                            padding: 20px"
-*/

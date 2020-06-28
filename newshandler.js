@@ -2,102 +2,79 @@
 
 
 //change mouse to load while searching
+function execute() {
 
-/*
 
-(function() {
-    var cors_api_host = 'cors-anywhere.herokuapp.com';
-    var cors_api_url = 'https://' + cors_api_host + '/';
-    var slice = [].slice;
-    var origin = window.location.protocol + '//' + window.location.host;
-    var open = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function() {
-        var args = slice.call(arguments);
-        var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
-        if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
-            targetOrigin[1] !== cors_api_host) {
-            args[1] = cors_api_url + args[1];
-        }
-        return open.apply(this, args);
-    };
-})();
+    console.log("loaded");
+
+
+    const url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=20180101&end_date=20201212&q=south%20africa&sort=relevance&api-key=Q0A7WM3N9sNXfLZKXL5GkfQVgPc9IySg";
 
 
 
 
-var url = 'https://cors-anywhere.herokuapp.com/'+'https://newsapi.org/v2/top-headlines?' +
-          'country=za&' +
-          'apiKey=30b8521945da4357a5e2742bf5e89224';
-var req = new Request(url);
-// fetch(req)
-//     .then(function(response) {
-//         console.log(response.json());
-//     })
-
-
-
-let headers = new Headers();
-
-headers.append('Content-Type', 'application/json');
-headers.append('Accept', 'application/json');
-headers.append('Origin','http://localhost:5500');
-
-fetch(req, {
-    mode: 'cors',
-    method: 'GET',
-    headers: headers
-})
-.then(
-    function(){
-    console.log(response.json())
-})
-*/
-
-
-
-//https://cors-anywhere.herokuapp.com/
-
-
-const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-const Url = "http://newsapi.org/v2/top-headlines?country=za&apiKey=30b8521945da4357a5e2742bf5e89224";
-
-
-var theURL = new Request(proxyUrl+Url);
-
-
-        fetch(theURL)
-        .then(function(){   
-                document.getElementById("wholepage").style.cursor = "wait";
-            })
-        .then(
-            function(response){
-                console.log(response.json());
-                document.getElementById("wholepage").style.cursor = "default";
-            })
-
-
-
-    /* delete jqery if this workls--------------------------------------------*/
-    /*
-        $.ajax({
-            url: url,
-            method: "GET",
-            datatype: "json",
-    
-            beforeSend: function () {
-                document.getElementById("wholepage").style.cursor = "wait";
-            },
-            complete: function () {
-                document.getElementById("wholepage").style.cursor = "default";
-            },
-            success: function (news) {
-                console.log(news);
-            },
-            error: function () {
-                console.log("Whoops, looks like there was a problem fetching news content:(");
-            }
-    
+    fetch(url)
+        .then((response1) =>
+            response1.json()
+            //document.getElementById("wholepage").style.cursor = "wait";       //loading cursor
+        )
+        .then((data) => {
+            dataHandler(data);
+            document.html.style.cursor = "wait";       //loading cursor
+            //document.getElementById("wholepage").style.cursor = "default";   //change mouse back
         });
-    
-    
-    */
+
+
+    const dataHandler = (info) => {
+        console.log("2nd then func");
+        const data1 = info.response.docs;
+
+        let DIV = document.getElementById("newsbackground"); //this is the DIV all articles are in
+
+        let err = "there was an issue retrieveing data from nytimes"
+        if (data1.length === 0) {
+            return err;
+        } else {
+
+
+            for (var i = 0; i < data1.length; i++) {//go through each article
+
+                let article = document.createElement("article");//create article
+                //article.setAttribute = ("id", "article" + i);         //article.id ="article1/2/3/..."
+                article.className = "newspiece";
+
+                let headline = document.createElement("h3");    //create h3 for heading
+                headline.appendChild(document.createTextNode(data1[i].headline.main)); //putting headline text inside element
+
+                let snippet = document.createElement("p"); //make <p> for snippet to go
+                snippet.appendChild(document.createTextNode(data1[i].snippet));
+
+
+                let link = document.createElement("a")
+                let articleLink = data1[i].web_url;      //link article with url to nytimes     .web_url
+
+                link.href = articleLink;
+                link.target = "_blank"
+                headline.className = "newshead";
+
+                link.appendChild(headline);
+                article.appendChild(link);
+                article.appendChild(snippet);
+
+
+                DIV.appendChild(article);
+            }
+
+            document.getElementsByName("html").style.cursor = "default"; //change mouse back
+        }
+
+    }
+    console.log("done");
+
+
+}
+
+
+
+window.onload = execute();
+
