@@ -1,20 +1,3 @@
-//pop up window joke-------------------------------------
-//need geo location and send alert
-/*window.onload = function geofind() {
-    alert("the government is trying to track you!!");
-
-    function success(position) {
-        alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude + " We know where you are");
-    }
-    function error() {
-        if (error.code == error.PERMISSION_DENIED) {
-            alert("phew... were safe for now");
-        }
-    }
-
-    navigator.geolocation.getCurrentPosition(success, error);
-}*/
-
 
 //back button function------------------------------------------
 function BackFunc() {
