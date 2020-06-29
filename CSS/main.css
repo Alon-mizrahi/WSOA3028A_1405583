@@ -330,8 +330,7 @@ margin: auto;
 {
     max-width: 40%;
     max-height: 40%;
-    margin:1%;
-    /*float: right;*/
+    margin:3px;
 }
 
 .otherbckgnd
@@ -345,3 +344,15 @@ margin: auto;
 
 }
     
+
+/*RESPOSIVE DESIGN-------------------------------------------*/
+@media only screen and (min-width: 600px)
+{
+
+
+}
+
+@media only screen and (min-width: 768px)
+{
+
+}
