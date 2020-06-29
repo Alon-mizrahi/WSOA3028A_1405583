@@ -357,12 +357,17 @@ margin: auto;
     .quicklink{ width: 50%; display: block; margin: auto; margin-top: 5%;}
     .mainArticle{min-width: 90%;}
     .gamebutton{ display: block; min-width: 20%; max-width: 30%; min-height: 15%;}
-    .contacts{ text-align: center;font-size: 30px;}
+    .contacts{ text-align: center;font-size: 30px;margin: auto;}
     .backbut{ max-width: 10%; height: 10%; margin: auto;}
     .articleimgs{min-width: 100%;}
 }
 
 @media all and (max-device-width: 800px) and (min-device-width:600px)           /*TABLETS*/ 
 {
+    .mainArticle{min-width: 90%;}
+    .contacts{ text-align: center;font-size: 30px; margin: auto;}
+    .backtotop{width: 10%; height: 5%;}
+    .backbut{ max-width: 10%; height: 10%; margin: auto;}
+    .articleimgs{min-width: 100%;}
 
 }
